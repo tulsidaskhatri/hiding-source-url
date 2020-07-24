@@ -8,7 +8,6 @@
 <script type="text/javascript">
     const container = document.getElementById('container');
     fetch('http://localhost:9000/').then(response => response.json()).then(response => {
-        console.log('response',response);
         container.innerHTML = response.body
     }).catch(error => {
         consol.log('error', error);
